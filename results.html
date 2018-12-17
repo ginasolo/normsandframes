@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Initial Results</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Gina Soloperto - Norms and Frames</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Introduction</a>
+</li>
+<li>
+  <a href="hypothesis.html">Hypothesis</a>
+</li>
+<li>
+  <a href="experiment.html">Experiment</a>
+</li>
+<li>
+  <a href="results.html">Results</a>
+</li>
+<li>
+  <a href="analysis.html">Extended Analysis</a>
+</li>
+<li>
+  <a href="conclusion.html">Conclusion</a>
+</li>
+<li>
+  <a href="discussion.html">Discussion</a>
+</li>
+<li>
+  <a href="references.html">References</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Initial Results</h1>
+
+</div>
+
+
+<div id="analysis-method" class="section level3">
+<h3>Analysis Method</h3>
+<p>The primarly analysis method used was a 3-way ANOVA testing the Empirical Expectation versus Normative Expecation effect shrough either a Positive or Negative Frame. as well as the interaction effect of both Empirical/Normative + Positive/Negative. While the study included a control group with N/34, our team realized, the control group may not have been necessary, and therefore the control treatment was not included in the ANOVA.</p>
+<p>Underestimated at the start of this experiment was the necessity of a large sample size for our results to reveal any sort of significance. Both influential and related experiments (Bicchieri, C., Dimant, E., Xiao, E 2017) (Mortensen, et al, 2018) reported samples sizes well over 400 participants. Before we started to collect data, we agreed the initial analysis method used would be a 3-way ANOVA testing the Empirical Expectation versus Normative Expectation effect through either a Positive or Negative Frame as well as the interaction effect of both Empirical/Normative + Positive/Negative.</p>
+<p>While the study included a control group with N/34, our team realized, the control group may not have been necessary, and therefore the control treatment was not included in the ANOVA. As reporting in our analysis section, we recorded just 182 participants in total with the intention of capturing more. Thus, from an early point in our data collection, when we first reported at N=129, and then again at N= 182, we ran a 3-way ANOVA as initially planned to evaluate the power of our sample size. In order to set up the ANOVA, we had to determine when the first instance of cheating occured. A person who lied on the first round of the game, score a 1, while the most honest scored an 11.</p>
+<p>To eliminate any concern about location of participants, we ran additional ANOVAs with and without interaction effect for each school. Although all schools reported similar measurements, we are featuring CUNY and PENN because they had the highest rates of participants, and the reports were almost identical. We knew at this point that geography was not an issue for our study. The lack of power, however was an issue. Yet, from a practicality standpoint, we were quickly able run a diagnostic on the data performance early and often informing us, in this case we needed to double, if not, triple our number of participants.</p>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<center>
+<img src="Anova%20Breakdown.png" />
+</center>
+<p>As expected and compared to similar studies (Bicchieri, Dimant, Xiao 2017) Hilbig &amp; Hessler 2013) who recorded significantly higher sample size, the results do not show any significance result between treatments, however, it was important to be able to evaluate the strength of each condition, so we looked at the impact, in this instance, of honesty rank against treatment group, and began to see the trend towards the efficacy of the normative negative condition.</p>
+<div id="honesty-rate-by-condition" class="section level5">
+<h5>Honesty rate by condition</h5>
+<p><img src="results_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="while-we-could-not-reject-the-null-nor-find-significance-againt-any-of-our-hypotheses-two-key-insights-began-to-emerge" class="section level4">
+<h4>While we could not reject the null nor find significance againt any of our hypotheses, two key insights began to emerge:</h4>
+<ul>
+<li><p>People in the Normative Negative condition cheated the least, on average.</p></li>
+<li><p>Negatively-framed messages resulted in less cheating, on average, than positively-framed messages.</p></li>
+</ul>
+<p>Additionally, we measured the honesty rate by gender for each treatment to see if there is a difference in behavior between men and women, and men did in fact rank 50/50 in both conditions. Our results are informed by small sample sizes, excluding control group, and incorporating both positive and negative frame conditions. The normative treatments overall have a higher efficacy on females participants, which is consistent with previous work (Fagley, et al, 2009) that could be a result of females having a greater ability for affective perspective taking (AFT). AFT is ‘‘the ability to understand how a situation appears to another person and how that person is reacting cognitively and emotionally to the situation.” Alternatively, only when men are asked to consider how they might feel, would they respond similarly to women under a frame effect. Historically, women perform higher in AFT measures.</p>
+<div id="female-honesty-rate-by-empirical-vs-normative-expectation" class="section level5">
+<h5>Female honesty rate by Empirical vs Normative Expectation</h5>
+<p><img src="results_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="male-honesty-rate-by-empirical-vs-normative-expectation" class="section level5">
+<h5>Male honesty rate by Empirical vs Normative Expectation</h5>
+<p><img src="results_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+</div>
+<div id="self-reported-risk-evaluation-by-gender" class="section level4">
+<h4>Self-reported risk evaluation by gender</h4>
+<p>In reviewing the variance between gender in the treatment group, we wanted to revisit the self-reported risk assessment results to see if there actually is a difference between gender and how risks are reviewed. The question as asked: “Please indicated on the scale if you are generally a person who is fully prepared to takes risks or who tries to avoid taking risks. 0 means not willing, 10 means very willing.”</p>
+<p>This graph shows female rank on the top, (mean rank of 5.5 and median of 6.03), and males on the bottom (mean rank 6.5 and median of 7), and implies that males are more inclined to make high risk decisions. What is unique about the female reporting is that no females reported a 5, while a high number of males did, and the opposite happened for the 6 rank. The majority of males scored their risk between 7 and 9 revealing that men take higher risks than women. (Charness,Gneezy, 2012).</p>
+<p><img src="results_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="next-steps" class="section level3">
+<h3>Next Steps</h3>
+<p>This is the first social norm to study the effects of norm expectations under positive/negative frames. Though we did not have enough power to get any significant results, my research team agreed to continue with further analysis to better understand how each individual condition was performing, if there may be potential for signficance around the norm negative condition, and what we may be able to anticipate in further study.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

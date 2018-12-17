@@ -1,0 +1,22 @@
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "Gina Soloperto - Norms and Frames"
+  left:
+    - text: "Introduction"
+      href: index.html
+    - text: "Hypothesis"
+      href: hypothesis.html      
+    - text: "Experiment"
+      href: experiment.html        
+    - text: "Results"
+      href: results.html 
+    - text: "Extended Analysis"
+      href: analysis.html      
+    - text: "Conclusion"
+      href: conclusion.html
+    - text: "Discussion"
+      href: discussion.html
+    - text: "References"
+      href: references.html
+     

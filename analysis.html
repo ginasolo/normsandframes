@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Extended Analysis</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Gina Soloperto - Norms and Frames</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Introduction</a>
+</li>
+<li>
+  <a href="hypothesis.html">Hypothesis</a>
+</li>
+<li>
+  <a href="experiment.html">Experiment</a>
+</li>
+<li>
+  <a href="results.html">Results</a>
+</li>
+<li>
+  <a href="analysis.html">Extended Analysis</a>
+</li>
+<li>
+  <a href="conclusion.html">Conclusion</a>
+</li>
+<li>
+  <a href="discussion.html">Discussion</a>
+</li>
+<li>
+  <a href="references.html">References</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Extended Analysis</h1>
+
+</div>
+
+
+<p>Based on what we learned from the 3-way ANOVA excerises, research colleagues ran measures of dishonesty rate (previously measured honesty in the ANOVAs) against each of the five conditions for our experiment based on the message they received before the dice roll game: the control group, empirical positive, empirical negative, normative positive, and normative negative. The additional benefit of this structure provided us flexibility such that we could analyze effects between conditions at the individual level or time-series level. Across treatments and populations, 32.9% of decisions were reported dishonestly in our experiment.</p>
+<p>The conditions were fairly balanced on size and gender split but differed slightly on average dishonesty and the variability of dishonesty. The control group (M = 36.5%, SD = 45.1%) had 33 participants, 55% of whom were female. The empirical positive (EP) condition (M = 39.6%, SD = 40.1%) had 39 participants, 54% of whom were female. 33 participants, 67% female comprised the empirical negative (EN) condition (M = 25.8%, SD = 45.5%). There were 38 normative positive (NP) participants (M = 38.0%, SD = 44.6%), of whom 55% were female. Lastly, the normative negative (NN) condition of 38 participants, 47% female, had the lowest variability and level of dishonesty (M = 21.1%, SD = 34.6%).</p>
+<p>Within each condition there were participants who never lied, lied some of the time, and lied every chance they had. Although the latter of these is the optimal economic decision, so as to maximize their chance at winning the raffle reward, the majority of participants in all conditions chose not to lie at all.</p>
+<div class="figure">
+<img src="Dishonesty%20by%20Condition_sm.png" />
+
+</div>
+<div id="normative-versus-empirical-messages-h1." class="section level4">
+<h4>Normative versus empirical messages, H1.</h4>
+<p>In order to test H1, which was that normative messages would result in less dishonest behavior than empirical messages, we ran a Wilcoxon rank-sum test between the two independent groups’ lying behavior at the individual level. Similar to the ANOVA, this test found no significant difference in dishonesty between participants who received an empirical or normative message, W = 2531, p = 0.39, thus we could not reject the null.</p>
+<p>When we ran the same test on type of frame used in a message however, the result of participants cheating less in the negatively-framed treatments is much closer to the generally accepted significance threshold, W = 3180.5, p = 0.06.</p>
+<p>To analyze the differences in means between our conditions independently, rather than grouping the type of norm or frame, we used a Kruskal Wallis H-Test as a non-parametric equivalent of a one-way ANOVA to detect any differences among more than two independent groups (Vargha &amp; Delaney, 1998) There was not a statistically significant difference between the percentage of lying behavior in our five conditions, H(4) = 4.46, p = 0.35.</p>
+</div>
+<div id="message-and-frame-interaction-h2." class="section level4">
+<h4>Message and frame interaction, H2.</h4>
+<p>Despite the insignificance of the aforementioned statistics, we then looked at pairwise Wilcoxon rank-sum tests to compare conditions to each other directly. Because the samples are independent, this test was used instead of the Wilcoxon signed-rank test. The Wilcoxon rank-sum tests the null hypothesis that a randomly selected value from one condition is equally likely to be greater or less than a value from the other condition (Wild &amp; Serber, 2011). Therefore, a significant result implies a consistent distinction between measured group values. The resulting p-values were calculated without any multiple comparison correction and are presented below.</p>
+<div class="figure">
+<img src="Wilcoxon.png" />
+
+</div>
+</div>
+<div id="time-series-analysis-h3." class="section level4">
+<h4>Time-series analysis, H3.</h4>
+<p>Our final hypothesis, H3, was that positively framed messages would lead to honesty persisting longer through the ten rounds. We coded the data into lying averages per round, rather than per individual, to investigate this idea and split the round averages by condition. This setup allowed us to look at a multiple regression to predict the percentage of dishonesty based on condition and round number. Unfortunately, this model prevented any statistical analysis on an interaction between condition and round because the number of datapoints is too few to have sufficient degrees of freedom. However, the regression equation proved to be significant, F(13,36) = 17.18, p &lt; 0.001, and explained 81% of the variance in dishonesty rates. Within this regression there were two significant effects of condition and multiple by round. Both empirical negative and normative negative messages predicted lower levels of lying by about 15% compared to the other conditions, p &lt; 0.001 for both. Three different rounds predicted significantly more lying when compared to round one and another three rounds were approaching significance in the same direction. In general, this majority suggests that the messages may have been somewhat successful initially and prevented a significant amount of dishonesty from occurring in round one. Rounds two, five, and ten displayed significantly more lying than round one, by about 7% at p &lt; 0.01. Rounds four, seven, and eight showed higher levels of lying but were only approaching significance, with p = 0.07 on average. The only round with an extremely insignificant p-value in comparison to round one is round nine.</p>
+<p>Consistent with earlier analyses suggesting the power of a negative frame and messages generally seem to decrease lying in round one, an interaction between the two independent variables is needed to fully support H3. The graph below provides a visual representation of the percentage of dishonest behavior by Round/Condition that we were hoping to test.</p>
+<div class="figure">
+<img src="DishonestybyRound.png" />
+
+</div>
+</div>
+<div id="advanced-analysis" class="section level4">
+<h4>Advanced Analysis</h4>
+<p>In order to capture the number of decisions each participant made, we transformed the dataset in order to run a panel data regression. This test uses participant ID numbers and round numbers to avoid collapsing multiple decisions into an individual average. The issues with relying on the individual average include losing power unnecessarily, because the average could reflect two or ten decisions, and not controlling for the fact that each individual’s decisions are influenced by those that came before it. We ran a series of four regressions on the panel data in order to explore the impacts of the variables on the percentage of dishonest behavior.</p>
+<ul>
+<li><p>Influence of condition on the dependent variable and found both empirical negative and normative negative messages relating to significantly lower rates of lying behavior (inclusive of clustering the standard errors at the individual level), p = 0.22.</p></li>
+<li><p>Gender interaction with the condition variable,with males being significantly more likely to lie at p &lt; 0.001, and an effect of empirical messages decreasing lying behavior among men, p = 0.01, such that the expected increase (~20%) based on gender alone is almost completely negated.</p></li>
+<li><p>Interaction of risk and condition reported a strange effect in relation to the normative positive condition. The beta for this condition is extremely negative, after being positive in the original regression, whereas the interaction term was significantly positive at p = 0.02.</p></li>
+</ul>
+<div class="figure">
+<img src="PanelRegression.png" />
+
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
