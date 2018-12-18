@@ -1,12 +1,9 @@
 ---
 title: "Hypothesis"
 ---
-
-The aim of this research is to advance Cialdini et al’s work of testing descriptive vs injunctive norms which does not distinguish between independent and interdependent behavior by, leveraging Bicchieri’s (2006, 2016) framework, in which we will focus on the results of interdependent behavior.
-
-  This research integrates the works Bicchieri’s (2016) Social Norm Theory with Cialdini et al’s injunctive and descriptive norm work that first, addresses the interdependent conditional preference “my preference depends on what I expect others do or what I expect others think I should do.” Second, we want to incorporate Cialdini et al’s norm focus learnings in measuring the efficacy of positive versus negative message framing. 
+  This research integrates the work of Bicchieri’s (2016) Social Norm Theory with Cialdini et al’s injunctive and descriptive norm work that first addresses the interdependent conditional preference “my preference depends on what I expect others do or what I expect others think I should do.” Second, we want to incorporate Cialdini et al’s norm focus learnings in measuring the efficacy of positive versus negative message framing. 
   
-Additionally, when an individual is temporarily focused on the normative consideration, the decision is more likely to act in favor of the norm. By now adding the variables of positive and negative framing, we are able to test and measure the effects against conditional social expectations by the dependent variable,  inducing honest or dishonest behavior in a 10 round dice roll game. Our hypotheses are as follows: 
+Additionally, as we learned from the Theory of Normative Focus, when an individual is temporarily focused on the normative consideration, the decision is more likely to act in favor of the norm. By now adding the variables of positive and negative framing, we are able to test and measure the effects against conditional social expectations by the dependent variable,  inducing honest or dishonest behavior in a 10 round dice roll game. Our hypotheses are as follows: 
 
 <center>
 ![](Hypothesis.png)
@@ -20,14 +17,14 @@ Additionally, when an individual is temporarily focused on the normative conside
 ####Null Hypothesis:  Framing and norm messaging have no effect on dishonest behavior. 
 
 
-  Bicchieri and Xiao (2008) find that expecting others to follow a pro-social norm may not be a good reason to conform, as social norms typically direct behavior that do not necessarily align with self-interested motives, in our experiment, the opportunity to win an Amazon gift card. “As cooperation always involves costs, an individual may be tempted to skirt the norm unless he/she also has some further reason to conform to it.” 
+  Bicchieri and Xiao (2008) found that expecting others to follow a pro-social norm may not be a good reason to conform as social norms tend to direct behaviors that do not necessarily align with self-interested motives, in the case of our experiment, the opportunity to win an Amazon gift card. “As cooperation always involves costs, an individual may be tempted to skirt the norm unless he/she also has some further reason to conform to it.” 
     
-This is informed by Bicchieri’s reference networks that states my conditional preferences to engage in or support a collective action are contingent on my social expectations.  Social expectations are aligned with other people who share the same beliefs and values. When presented with an empirical expectation, a person’s beliefs on lying behavior distort, particularly in times of uncertainty, pointing to the ambiguity of empirical information, and if that person solely benefits from the lie (Bicchieri, Dimant 2018). 
+This is informed by Bicchieri’s theory on reference networks that states my conditional preferences to engage in or support a collective action is contingent on my social expectations.  Social expectations are aligned with other people who share the same beliefs and values. When presented with an empirical expectation, a person’s beliefs on lying behavior distorts, particularly in times of uncertainty, pointing to the ambiguity of empirical information, and if that person solely benefits from the lie (Bicchieri, Dimant 2018). 
 
 
 ####Hypothesis 1: Normative messages will resonate stronger than Empirical messages.  
 
-This is informed by Bicchieri’s reference networks that states my conditional preferences to engage in or support a collective action are contingent on my social expectations.  Social expectations are aligned with other people who share the same beliefs and values. When presented with an empirical expectation, a person’s beliefs on lying behavior distort, particularly in times of uncertainty, pointing to the ambiguity of empirical information, and if that person solely benefits from the lie (Bicchieri, Dimant 2018). 
+This is informed by Bicchieri’s theory on reference networks that states my conditional preferences to engage in or support a collective action are contingent on my social expectations.  Social expectations are aligned with other people who share the same beliefs and values. When presented with an empirical expectation, a person’s beliefs on lying behavior distort, particularly in times of uncertainty, pointing to the ambiguity of empirical information, and if that person solely benefits from the lie (Bicchieri, Dimant 2018). 
 
 
 
@@ -44,14 +41,13 @@ This is informed by Bicchieri’s reference networks that states my conditional 
 &nbsp;
 
 ## Procedure
-
-Like Bicchieri’s (2016) model suggests, we want to first measure the behavior of each participant, and then measure their beliefs about the behavior recorded in the first step. To do so, we use a Qualtrics die roll paradigm which records true value obtained in a die roll in addition to that reported by participants. The benefit of measuring actual behavior with a monitor is that, according to Bicchieri, subjects are not subject to self-reporting biases. Our experiment tracks both the self-report and the action. 
+We use a Qualtrics die roll paradigm which records true value obtained in a die roll in addition to that reported by participants. The benefit of measuring actual behavior with a monitor is that, according to Bicchieri, subjects are not subject to self-reporting biases. Our experiment tracks both the self-report and the action. 
 
 
 
 ![](Experiment Summary.png)
 
-We recruited student participants (N=182) from three geographical locations, Philadelphia, New York, and Los Angeles, either in-person or via email asking them to take a survey. All were  incentivized with the potential to win up to a $100 Amazon gift card. In attempts to address salience of the incentive, we presented the maximum of the incentive. Following recruitment, everything in the experiment was completed digitally to decrease the risk of experimenter demand effects (Cialdini et al, 2006). 
+We recruited student participants (N=182) from three geographical locations, Philadelphia, New York, and Los Angeles, either in-person or via email asking them to take a survey. All were incentivized with the potential to win up to a $100 Amazon gift card. In attempt to address salience of the incentive, we presented the maximum of the incentive. Following recruitment, everything in the experiment was completed digitally to decrease the risk of experimenter demand effects (Cialdini et al, 2006). 
 
 Prior to conducting the main experiment, we ran a pre-test to get a baseline perspective on what determine minority versus majority, we launched a pre-test where 41 respondents were asked about their perception of “majority” & “minority” by treatment, and average percentage of both added up to 100 across the sample.  Thus, we concluded that most people successfully understood the terms and affirmed there was no deception, as referenced from a previous research study with an identical task (Bicchieri & Dimant, 2018). 
 
